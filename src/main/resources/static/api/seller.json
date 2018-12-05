@@ -1,0 +1,50 @@
+{
+  "errno": 0,
+  "data": {
+    "name": "胜哥干货",
+    "description": "Java，Python, Go",
+    "score": 4.2,
+    "serviceScore": 4.1,
+    "foodScore": 4.3,
+    "rankRate": 69.2,
+    "minPrice": 0,
+    "deliveryPrice": 0,
+    "ratingCount": 24,
+    "sellCount": 90,
+    "bulletin": "推广技术博客，推广知识",
+    "supports": [
+      {
+        "type": 0,
+        "description": "java"
+      },
+      {
+        "type": 1,
+        "description": "python"
+      },
+      {
+        "type": 2,
+        "description": "go"
+      },
+      {
+        "type": 3,
+        "description": "docker"
+      },
+      {
+        "type": 4,
+        "description": "SpringBoot ,SpringCloud"
+      }
+    ],
+    "avatar": "https://img2.mukewang.com/5b854f200001459b02540255-100-100.jpg",
+    "pics": [
+      "https://img.mukewang.com/szimg/5b4c817f0001945605400300-360-202.jpg",
+      "https://img.mukewang.com/szimg/59b8a486000107fb05400300-360-202.jpg",
+      "https://img.mukewang.com/szimg/5a7127370001a8fa05400300-360-202.jpg",
+      "https://img.mukewang.com/szimg/5b384772000132c405400300-360-202.jpg"
+
+    ],
+    "infos": [
+      "胜哥干货",
+      "北京市昌平区"
+    ]
+  }
+}
