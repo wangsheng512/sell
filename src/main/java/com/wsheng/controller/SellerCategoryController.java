@@ -76,7 +76,6 @@ public class SellerCategoryController {
             map.put("url", "/sell/seller/category/index");
             return new ModelAndView("common/error", map);
         }
-
         ProductCategory productCategory = new ProductCategory();
         try {
             if (form.getCategoryId() != null) {
@@ -89,7 +88,6 @@ public class SellerCategoryController {
             map.put("url", "/sell/seller/category/index");
             return new ModelAndView("common/error", map);
         }
-
         map.put("url", "/sell/seller/category/list");
         return new ModelAndView("common/success", map);
     }
