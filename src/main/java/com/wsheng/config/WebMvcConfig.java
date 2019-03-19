@@ -26,6 +26,14 @@ public  class WebMvcConfig implements WebMvcConfigurer{
     private CorsInterceptor corsInterceptor;
 
     @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        // 跨域拦截器需放在最上面
+        registry.addInterceptor(corsInterceptor).addPathPatterns("/**");
+        // 校验token的拦截器
+        // registry.addInterceptor(loginInterceptor).addPathPatterns("/admin/**");
+    }
+
+    @Override
     public void configurePathMatch(PathMatchConfigurer configurer) {
 
     }
@@ -51,13 +59,7 @@ public  class WebMvcConfig implements WebMvcConfigurer{
 
     }
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        // 跨域拦截器需放在最上面
-        registry.addInterceptor(corsInterceptor).addPathPatterns("/**");
-        // 校验token的拦截器
-        // registry.addInterceptor(loginInterceptor).addPathPatterns("/admin/**");
-     }
+
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
